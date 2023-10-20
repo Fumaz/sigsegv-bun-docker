@@ -9,6 +9,10 @@ Bun.serve({
     }
 });
 
-setInterval(() => {
-    console.log("Hello via Bun!");
-}, 1000 * 5);
+async function test() {
+    setInterval(() => {
+        console.log("Hello via Bun!");
+    }, 1000 * 5);
+}
+
+await test();
