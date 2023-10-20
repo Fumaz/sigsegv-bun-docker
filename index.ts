@@ -8,3 +8,7 @@ Bun.serve({
         return new Response("Hello via Bun!");
     }
 });
+
+setInterval(() => {
+    console.log("Hello via Bun!");
+}, 1000 * 5);
